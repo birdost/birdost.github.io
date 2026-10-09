@@ -1,6 +1,6 @@
-# birdost.github.io · Tekinify
+# birdost.github.io · Tekinify Studios
 
-Tekinify bağımsız oyun stüdyosunun web sitesi: https://birdost.github.io
+Tekinify Studios bağımsız oyun stüdyosunun web sitesi: https://birdost.github.io
 
 ## İçerik
 

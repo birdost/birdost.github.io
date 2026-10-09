@@ -12,8 +12,8 @@
   const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 
   const TITLES = {
-    tr: 'Tekinify · Küçük, hızlı, neon arcade oyunları',
-    en: 'Tekinify · Small, fast, neon arcade games',
+    tr: 'Tekinify Studios · Küçük, hızlı, neon arcade oyunları',
+    en: 'Tekinify Studios · Small, fast, neon arcade games',
   };
   const NAMES = {
     tr: { frostbeat: 'Frost Beat', clawloft: 'Clawloft', twinwing: 'Twinwing', hangmanescape: 'Adam Asmaca: Kaçış', tilkiyeborc: 'Tilkiye Borç', gariplig: 'Garip Lig' },

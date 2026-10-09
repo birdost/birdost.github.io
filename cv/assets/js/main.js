@@ -23,11 +23,12 @@
         'Fikirleri oynanabilir oyunlara dönüştürüyorum.',
         'Oyunlarımı Google Play\'de yayınlıyorum.',
         'Yapay zekâyı bir üretim ortağı olarak kullanıyorum.',
+        'Kod yazıyor, teknik sorunlara çözüm üretiyorum.',
       ],
       terminal: [
         {
           prompt: 'Basit ama bağımlılık yapan bir mobil oyun tasarla',
-          steps: ['Fikir analiz ediliyor', 'Oyun mekaniği tasarlanıyor', 'Kod üretiliyor', 'Testler çalıştırılıyor', 'Google Play için derleniyor'],
+          steps: ['Oyun mekaniği tasarlanıyor', 'Godot sahnesi kuruluyor', '3B modeller hazırlanıyor (Meshy)', 'Testler çalıştırılıyor', 'Google Play için derleniyor'],
           done: '✓ Yayına hazır! 🚀',
         },
         {
@@ -45,6 +46,11 @@
           steps: ['Hata kayıtları okunuyor', 'Sorunun kaynağı bulundu', 'Düzeltme uygulanıyor', 'Tüm testler geçti'],
           done: '✓ Hata giderildi! 🛠️',
         },
+        {
+          prompt: 'Kişisel CV sitemi efektli bir şekilde kodla',
+          steps: ['Tasarım planlanıyor', 'HTML, CSS ve JavaScript yazılıyor', 'Efektler ekleniyor', 'Mobil uyum test ediliyor'],
+          done: '✓ Şu an bu sitedesin! 👋',
+        },
       ],
       toast: '🎮 Gizli mod açıldı! Bir oyun geliştiricisinin sitesinde bunu bekliyordun, değil mi?',
     },
@@ -55,11 +61,12 @@
         'I turn ideas into playable games.',
         'I publish my games on Google Play.',
         'I use AI as a production partner.',
+        'I write code and solve technical problems.',
       ],
       terminal: [
         {
           prompt: 'Design a simple but addictive mobile game',
-          steps: ['Analyzing the idea', 'Designing the core mechanic', 'Generating code', 'Running tests', 'Building for Google Play'],
+          steps: ['Designing the core mechanic', 'Setting up the Godot scene', 'Preparing 3D models (Meshy)', 'Running tests', 'Building for Google Play'],
           done: '✓ Ready to ship! 🚀',
         },
         {
@@ -76,6 +83,11 @@
           prompt: 'Find and fix the crash in the game',
           steps: ['Reading crash logs', 'Root cause found', 'Applying the fix', 'All tests passed'],
           done: '✓ Bug fixed! 🛠️',
+        },
+        {
+          prompt: 'Code my personal CV site, with effects',
+          steps: ['Planning the design', 'Writing HTML, CSS and JavaScript', 'Adding effects', 'Testing on mobile'],
+          done: '✓ You\'re looking at it! 👋',
         },
       ],
       toast: '🎮 Secret mode unlocked! You expected this on a game developer\'s site, right?',
@@ -344,7 +356,7 @@
       make('span', 'tl__path', ' ~ '),
       make('span', 'tl__sym', '$ '),
     );
-    if (withCommand) line.append(make('span', 'tl__cmd', 'ai '));
+    if (withCommand) line.append(make('span', 'tl__cmd', 'claude '));
     const str = make('span', 'tl__str', promptText);
     line.append(str);
     return { line, str };
